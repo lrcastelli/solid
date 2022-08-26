@@ -1,7 +1,6 @@
-// Single Responsability - Code example (bad way)
+// Single Responsibility - Code example (bad way)
 //
 // ------------------------------------------------
-
 struct Person {
     let name: String
     let age: Int
@@ -28,8 +27,7 @@ struct Person {
     let age: Int
 }
 
-// 2nd resopnsability in another class
-
+// 2nd responsibility in another class
 struct AgeVerifier {
     func checkAge(age: Int) -> String {
         if age < 18 {
@@ -43,5 +41,4 @@ struct AgeVerifier {
 let person = Person(name: "Leo", age: 30)
 let verifyAge = AgeVerifier()
 verifyAge.checkAge(age: person.age)
-
 // ------------------------------------------------
